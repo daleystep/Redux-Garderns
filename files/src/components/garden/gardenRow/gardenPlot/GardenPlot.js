@@ -1,9 +1,15 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
-const GardenPlot = () => {
+const cropImages = {
+
+}
+
+const GardenPlot = (props) => {
     return (
-        <div />
+        <div className='garden-plot'>
+            <image src={cropImages[props.crop]} />
+        </div>
     )
 }
 
